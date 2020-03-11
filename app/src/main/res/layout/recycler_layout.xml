@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/userdetail_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageView_show_pro"
+                android:layout_width="126dp"
+                android:layout_height="101dp"
+                android:src="@drawable/ic_item_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pro_name_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Laptop"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retail Price : " />
+
+                <TextView
+                    android:id="@+id/retail_price_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity  : " />
+
+                <TextView
+                    android:id="@+id/qty_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net Amount  : " />
+
+                <TextView
+                    android:id="@+id/netAmountshow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

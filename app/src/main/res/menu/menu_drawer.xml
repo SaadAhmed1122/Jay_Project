@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/idItem1"
+        android:icon="@drawable/ab_24dp"
+        android:title="Add Product"/>
+<item
+android:id="@+id/idItem2"
+    android:icon="@drawable/show_pro_drwa"
+    android:title="Compies List"/>
+    <item
+        android:id="@+id/idItem3"
+android:title="All Product"
+        android:icon="@drawable/all_p_24dp"
+
+        />
+</group>
+
+    <item android:title="Owner Info">
+        <menu>
+            <item android:title="Mr Jay"
+                android:id="@+id/item4"
+                android:icon="@drawable/uing_24dp"
+                ></item>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Help and Info">
+        <menu>
+            <item android:title="Center Tech Sakrand"
+                android:id="@+id/item5"
+                android:icon="@drawable/ic_help_black_24dp"
+                ></item>
+
+        </menu>
+
+    </item>
+
+
+</menu>

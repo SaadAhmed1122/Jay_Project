@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/userlist_back" android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ripple_effect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageButton android:id="@+id/layout_gallery" android:background="@drawable/ic_gallery" android:layout_width="55dp" android:layout_height="55dp"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/st_pic_dialog_gallery"/>
+            </LinearLayout> &gt;
+        </LinearLayout> &gt;
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/ripple_effect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageButton android:id="@+id/layout_camera" android:background="@drawable/ic_camera" android:layout_width="65dp" android:layout_height="65dp"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/st_pic_dialog_camera"/>
+            </LinearLayout> &gt;
+        </LinearLayout> &gt;
+    </LinearLayout>&gt;
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/mySearchWidget"
+        android:background="@drawable/item_search_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:weightSum="10">
+        <LinearLayout
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_item_search"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/item_search_inner_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5">
+                <EditText
+                    android:textColor="#d01b1b1b"
+                    android:id="@+id/tet_search"
+                    android:background="@drawable/edit_text_background"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:layout_weight="4.3"/>
+                <LinearLayout android:id="@+id/search_cross" android:padding="5dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="0.7">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_item_search_cross"/>
+                </LinearLayout>
+            </LinearLayout>&gt; 
+        </LinearLayout>&gt; 
+    </LinearLayout>
+</LinearLayout>

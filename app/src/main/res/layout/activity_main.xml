@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView_pro"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:onClick="dilog_open"
+                android:src="@drawable/moodpic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                />
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_full_pro_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_proname"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Retail Price"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_Retail_price"
+                    android:layout_width="match_parent"
+                    android:inputType="numberSigned"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="false"
+                android:editable="false"
+                android:id="@+id/c_name"
+                android:hint="Company" />
+
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantity of Packets">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_Quantiy_pc"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantity of Qarzan">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_Quantiy_darzan"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Wholesale Price of per darzon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_wholesalerate_pr_derzan"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Wholesale Price of per Cartoon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_wholesalerate_pr_cartoon"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the discount of Per Darzan %">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_discount_per_d"
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Scheme"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_scheme"
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/coupon" />
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Net Amount of piece">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_net_Amount_pc"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Net Amount of Darzan">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_net_Amount_darzan"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Extra Discount perderzan">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_extra_bonus"
+                        android:inputType="numberSigned"
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Extra Discount">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_extra_dic2"
+                        android:inputType="numberSigned"
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Another Discount">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_extra_dic3"
+                        android:inputType="numberSigned"
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name of City">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText1_city"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Final Amount of piece">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_finalAmount_pc"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Final Amount of Darzan">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText1_finalAmount_dz"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="227dp"
+                android:layout_height="89dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <LinearLayout
+        android:layout_marginTop="100dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/cancel_item_main"
+                android:background="@drawable/new_design_button_round"
+                android:visibility="visible"
+                android:onClick="banc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton android:id="@+id/button_save"
+android:onClick="save_pro"
+                android:background="@drawable/new_design_button_round" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_done_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

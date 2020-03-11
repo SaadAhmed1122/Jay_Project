@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">StockManagment</string>
+    <array name="coupon">
+        <item>Select Coupen</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <string name="hint_full_pro_name">Product Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_password">Password</string>
+    <string name="text_sign_up">SIGN UP</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Sign Up Successful</string>
+    <string name="st_pic_dialog_camera">Camera</string>
+    <string name="st_pic_dialog_gallery">Galary</string>
+    <string name="st_products_no_product_found">No Product Found</string>
+    <string name="Cancel">Cancel</string>
+    <string name="navigation_drawer_open">Navigation Open</string>
+    <string name="navigation_drawer_Close">Navigation Close</string>
+</resources>
